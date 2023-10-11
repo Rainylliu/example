@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="main">
+        <div class="header" id="header">
+            <p onclick="handleNav('home')">Home</p>
+            <p onclick="handleNav('about')">About</p>
+            <p onclick="handleNav('dream')">Dream</p>
+            <div id="dot"></div>
+        </div>
+        <div class="box_one">
+            <img class="bg1" id="bg1" src="./img/bg.png" alt="background">
+            <img class="bg2" id="bg2" src="./img/bg1.png" alt="clouds_frame" style="width:100.3%; margin-left:-5px;">
+            <div class="title">
+                <h3>The story of</h3>
+                <h1>Dream</h1>
+            </div>
+            <div class="scroll1">
+                 <img src="./icon/mouse-cursor.png" alt="mouse">
+            </div>
+        </div>
+        <div class="box_two">
+            <div class="image_container">
+                <img class="bg1" src="./img/bg.png" alt="background">
+            </div>
+            <div class="text">
+                <h1>Dream</h1>
+                <p>
+                    In dreams, we soar on whispered winds,
+                    To distant realms where magic begins.
+                    Through starry skies and moonlit streams,
+                    Our hearts entwined in fanciful dreams. 
+                </p>
+                <h6>"Let's journey into my dream world together..."</h6>
+            </div>
+            <div class="scroll2">
+                <img src="./icon/mouse-cursor.png" alt="mouse">
+            </div>
+        </div>
+        <div class="box_three">
+            <div class="all_branch" style="position: relative; height: 700px; width: 300px;">
+                <img src="./img/branch.png" alt="branch" style="height: 700px; width: 300px;"> 
+                <div class="day1">
+                    <div class="story1" id="hover_text1" onclick="handleOpen('./story_html/story_1.html')" onmouseout="handleOff()">
+                        <div class="hover_text1">
+                            <p id="p1" style="display:none;">Dream of day1</p>
+                        </div>
+                        <div class="mood1"  id="hover_text2" onclick="handleOpen('./mood_html/mood_1.html')" onmouseout="handleOff()">
+                            <div class="hover_text2">
+                                <p id="p2" style="display:none;">Mood of day1</p>
+                            </div>
+                            <div class="routine1" id="hover_text3" onclick="handleOpen('./routine_html/routine1.html')" onmouseout="handleOff()">
+                                <div class="hover_text3">
+                                    <p id="p3" style="display:none;">Routine of day1</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+<!-- <a href="./story_html/story_1.html"></a> -->
+                <div class="day2">
+                    <div class="story2" id="hover_text4" onclick="handleOpen('./story_html/story_2.html')" onmouseout="handleOff()">
+                        <div class="hover_text4" id="hover_text4">
+                            <p id="p4" style="display:none;">Dream of day2</p>
+                        </div>
+                        <div class="mood2" id="hover_text5" onclick="handleOpen('./mood_html/mood_2.html')" onmouseout="handleOff()">
+                            <div class="hover_text5" id="hover_text5">
+                                <p id="p5" style="display:none;">Mood of day2</p>
+                            </div>
+                            <div class="routine2"  id="hover_text6" onclick="handleOpen('./routine_html/routine2.html')" onmouseout="handleOff()">
+                                <div class="hover_text6" id="hover_text6">
+                                    <p id="p6" style="display:none;">Routine of day2</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+
+                <div class="day3">
+                    <div class="story3" id="hover_text7" onclick="handleOpen('./story_html/story_3.html')" onmouseout="handleOff()">
+                        <div class="hover_text7" id="hover_text7">
+                            <p id="p7" style="display:none;">Dream of day3</p>
+                        </div>
+                        <div class="mood3" id="hover_text8" onclick="handleOpen('./mood_html/mood_3.html')" onmouseout="handleOff()">
+                            <div class="hover_text8" id="hover_text8">
+                                <p id="p8" style="display:none;">Mood of day3</p>
+                            </div>
+                            <div class="routine3" id="hover_text9" onclick="handleOpen('./routine_html/routine3.html')" onmouseout="handleOff()">
+                                <div class="hover_text9" id="hover_text9">
+                                    <p id="p9" style="display:none;">Routine of day3</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+
+                <div class="day4">
+                    <div class="story4" id="hover_text7" onclick="handleOpen('./story_html/story_4.html')" onmouseout="handleOff()">
+                        <div class="hover_text10" id="hover_text10">
+                            <p id="p10" style="display:none;">Dream of day4</p>
+                        </div>
+                        <div class="mood4" onclick="handleOpen('./mood_html/mood_4.html')" onmouseout="handleOff()">
+                            <div class="hover_text11" id="hover_text11">
+                                <p id="p11" style="display:none;">Mood of day4</p>
+                            </div>
+                            <div class="routine4" onclick="handleOpen('./routine_html/routine4.html')" onmouseout="handleOff()">
+                                <div class="hover_text12" id="hover_text12">
+                                    <p id="p12" style="display:none;">Routine of day4</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+
+
+
+            </div>
+        <div class="explain">
+            <div class="one_ex" style="color: rgb(216, 206, 226);display: flex; align-items: center;">
+                <div style="margin-bottom: 90px; display: flex; align-items: center;">
+                    <p>The story of dream</p>
+                    <div style="width: 50px;height: 1px;background-color: rgb(216, 206, 226);"></div></div>
+                    <div class="e_story"></div>
+                    
+                    <div class="two_ex" style="color: rgb(216, 206, 226);display: flex; align-items: center;margin-left: -365px;
+                margin-top: 44px;">
+                        <div style="margin-bottom: 45px; display: flex; align-items: center;">
+                            <p>Mood before sleep</p>
+                            <div style="width: 50px;height: 1px;background-color: rgb(216, 206, 226);"></div></div>
+                            <div class="e_mood"></div>
+                            
+                            <div class="three_ex" 
+                                style="color: rgb(216, 206, 226);display: flex; align-items: center;margin-left: -295px;
+                    margin-top: 44px;">
+                                <p>Bedtime routine</p>
+                                <div style="width: 50px;height: 1px;background-color: rgb(216, 206, 226);"></div>
+                                <div class="e_routine"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
